@@ -6,7 +6,7 @@ from tensorflow.keras.backend import expand_dims
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-model = tf.keras.models.load_model("depression.h5")
+model = tf.keras.models.load_model("Assignment\depression.h5")
 
 def deep_depression_detector(activity_data_csv_file):
 	df = pd.read_csv(activity_data_csv_file)
